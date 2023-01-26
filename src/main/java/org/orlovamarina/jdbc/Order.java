@@ -101,5 +101,14 @@ public class Order implements DataTransferObject {
                 ", orderItems=" + "\n" + orderItems +
                 '}';
     }
+
+
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderItems = orderLines;
+    }
+
+    public List<OrderLine> getOrderLines() {
+        return this.orderItems;
+    }
 }
 
